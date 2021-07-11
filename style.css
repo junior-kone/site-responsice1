@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+
+.block_page{
+    width: 700px;
+}
+body{
+    margin: 0;
+}
+/* l'entête */
+
+header{
+    background-color: rgb(65, 62, 62);
+    padding: 20px;
+}
+
+/* les barres de navigation */
+nav{
+    font-weight: 200;
+    font-family: sans-serif;
+}
+.logo{
+    font-family: Agilia;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 8px ;
+}
+
+nav a:hover{
+    color: grey;
+}
+/* barre de recherche */
+.input{
+    float: right;
+}
+.input input{
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+}
+
+.input .button{
+    background-color: rgb(47, 47, 47);
+    color: green;
+    border-radius: 5px green;
+    border: solid;
+    cursor: pointer;
+    opacity: .8;
+}
+.button:hover{
+    color: white;
+    border: none;
+    background-color: green;
+}
+
+/* banière image */
+.baniere{
+    background-color: gray;
+    height: 400px;
+    width: 100%;
+}
+/* après la banierre */
+.main{
+    display: flex;
+    background-color: white;
+}
+
+.container{
+    margin: 100px;
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    width: 300px;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+h2{
+    font-weight: 0;
+}
+
+.container img{
+    border-radius: 50px;
+}
+
+.button2{
+    background-color: gray;
+    color: white;
+    opacity: .8;
+    padding: 13px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color: none;
+}
+
+/* section de la page */
+section{
+    display: column;
+    margin: 200px;
+}
+
+article{
+    display: flex;
+    margin-block-start: 20px;
+
+}
+
+.container1{
+    width: 400px;
+    height: auto;
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+article img{
+    float: right;
+    width: 400px;
+    margin: 20px;
+}
+/* pied de la page */
+footer{
+    margin: 20px;
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(0, 184, 184);
+}
+
+/* applicatiobn des media query */
+
+/* barre de navigation */
+@media all and (max-width: 1024px)
+{  
+    header
+    {
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    .input
+    {
+        flex-direction: row-reverse;
+        text-align: center;
+        margin: none;
+        left: 0;
+        right: 0;
+        margin-top: 8px;
+        
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    nav a 
+    {
+        flex-direction: column;
+        border-bottom:  2px rgb(80, 117, 24);
+        font-size: 20px;
+    }
+}
+
+
+@media all and (max-width: 1024px)
+{
+    .block_page
+    {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    .baniere
+    {
+        display: none;
+    }
+}
+@media all and (max-width: 1024px)
+{
+    .main{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: auto;
+    }
+    article
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container1
+    {
+        font-size: 20px;
+    }
+}
+ 
+@media all and (max-width: 1024px)
+{
+    footer
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
